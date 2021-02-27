@@ -1,10 +1,12 @@
+'use strict'
 const fastify = require('fastify')({
   logger: true
 })
 
+fastify.register(require('./routes'))
 
 fastify.get('/', (request, reply) => {
-  reply.send({ hello: 'world'})
+  reply.send({ hello: 'world' })
 })
 
 fastify.listen(3000, function (err, address) {
