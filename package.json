@@ -2,7 +2,7 @@
   "name": "using-fastify-axelespinosadev",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/delivery/http/index.js",
   "scripts": {
     "dev": "nodemon main"
   },
